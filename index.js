@@ -1,9 +1,8 @@
 // Import stylesheets
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-// import './component';
+import './component';
 
-@customElement('App')
 export class App extends LitElement {
   render() {
     return html`
@@ -11,3 +10,5 @@ export class App extends LitElement {
 `;
   }
 }
+
+customElements.define('app-v1', App);
